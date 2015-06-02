@@ -1,4 +1,4 @@
-1) Install xampp in local machine.
+1) Install xampp in local machine.<br>
 2) Install local drupal instance inside htdocs.
 3) to install and configure git in local directory(/Applications/XAMPP/htdocs/drupal7) follow the below ink
 https://help.github.com/articles/set-up-git/
