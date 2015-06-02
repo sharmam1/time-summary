@@ -1,0 +1,3 @@
+name = "Ti custom"
+description = "Business logic for time summary project."
+core = "7.x"
