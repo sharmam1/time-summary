@@ -37,6 +37,7 @@ features[field_instance][] = node-top_stories-field_url_redirect
 features[field_instance][] = node-world_stories-body
 features[field_instance][] = node-world_stories-field_url_redir
 features[filter][] = full_html
+features[menu_custom][] = main-menu
 features[menu_custom][] = navigation
 features[node][] = business
 features[node][] = sports
