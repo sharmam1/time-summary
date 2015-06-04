@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ts_homepage feature.
+ */
+
+include_once 'ts_homepage.features.inc';
