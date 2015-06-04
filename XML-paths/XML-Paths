@@ -10,3 +10,6 @@ NHL: http://www.si.com/rss/si_nhl.rss
 NCAA Football: http://www.si.com/rss/si_ncaaf.rss
 Soccer: http://www.si.com/rss/si_soccer.rss
 
+money => depends on the time.com
+people => http://www.people.com/people/web/rss/ => http://rss.people.com/web/people/rss/topheadlines/index.xml(Latest news)
+forturne => http://fortune.com/feed/ => Fortune 500 Daily & Breaking Business News
