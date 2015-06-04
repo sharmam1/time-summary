@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the TS News feature.
+ */
+
+include_once 'ts_news.features.inc';
