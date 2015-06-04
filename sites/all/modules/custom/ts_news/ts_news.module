@@ -5,3 +5,27 @@
  */
 
 include_once 'ts_news.features.inc';
+
+function ts_news_menu() {
+  $items['trending'] = array(
+    'title' => 'Trending News',
+    'page callback' => 'trending_time_news',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+
+function trending_time_news () {
+  $url = 'http://api.onebot.timeinc.com/feeds/timeinc/all.json';
+  $request = drupal_http_request($url);
+  $json_response = drupal_json_decode($request->data);
+  $output = '<div class="title">';
+  foreach ($json_response['trending'] as $response) {
+    $output .= '<div class="trending-item" style="margin-bottom: 5%";>';
+    $output .= '<div class="trending-title">' . l($response['headline'],$response['url']) . '</div>';
+    $output .= '<div class="trending-desc">' . $response['excerpt'] . '</div></div>';
+  }
+  $output .= '</div>';
+  return $output;
+}
