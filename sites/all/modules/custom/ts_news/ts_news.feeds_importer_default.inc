@@ -153,6 +153,11 @@ function ts_news_feeds_importer_default() {
             'target' => 'title',
             'unique' => FALSE,
           ),
+          2 => array(
+            'source' => 'url',
+            'target' => 'field_url_redirect:url',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '0',
         'input_format' => 'full_html',
@@ -204,6 +209,11 @@ function ts_news_feeds_importer_default() {
           1 => array(
             'source' => 'description',
             'target' => 'body',
+            'unique' => FALSE,
+          ),
+          2 => array(
+            'source' => 'url',
+            'target' => 'field_url_redir:url',
             'unique' => FALSE,
           ),
         ),
