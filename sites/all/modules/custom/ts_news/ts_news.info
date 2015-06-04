@@ -39,6 +39,12 @@ features[field_instance][] = node-world_stories-field_url_redir
 features[filter][] = full_html
 features[menu_custom][] = main-menu
 features[menu_custom][] = navigation
+features[menu_links][] = main-menu_business-news:http://localhost/time-summary/?q=business
+features[menu_links][] = main-menu_home:<front>
+features[menu_links][] = main-menu_sports-news:http://localhost/time-summary/?q=sports-news
+features[menu_links][] = main-menu_top-stories:http://localhost/time-summary/?q=top-stories
+features[menu_links][] = main-menu_trending-now:trending
+features[menu_links][] = main-menu_world-news:http://localhost/time-summary/?q=world-news
 features[node][] = business
 features[node][] = sports
 features[node][] = top_stories
