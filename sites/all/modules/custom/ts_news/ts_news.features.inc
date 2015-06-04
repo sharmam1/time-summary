@@ -25,6 +25,14 @@ function ts_news_views_api($module = NULL, $api = NULL) {
  */
 function ts_news_node_info() {
   $items = array(
+    'business' => array(
+      'name' => t('Business'),
+      'base' => 'node_content',
+      'description' => t('Fortune 500 Daily & Breaking Business News'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'sports' => array(
       'name' => t('Sports'),
       'base' => 'node_content',
