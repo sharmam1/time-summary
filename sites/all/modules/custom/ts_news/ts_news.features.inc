@@ -25,6 +25,14 @@ function ts_news_views_api($module = NULL, $api = NULL) {
  */
 function ts_news_node_info() {
   $items = array(
+    'sports' => array(
+      'name' => t('Sports'),
+      'base' => 'node_content',
+      'description' => t('display sport related news'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'top_stories' => array(
       'name' => t('Top stories'),
       'base' => 'node_content',
@@ -36,7 +44,7 @@ function ts_news_node_info() {
     'world_stories' => array(
       'name' => t('World stories'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('to show world news'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
