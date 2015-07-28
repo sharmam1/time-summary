@@ -13,7 +13,7 @@ ol, ul { list-style: none }
 blockquote, q { quotes: none }
 :focus { outline: 0 }
 table { border-collapse: collapse; border-spacing: 0; }
-img { max-width: 100%; height: auto; }
+img {/* max-width: 100%; height: auto;*/ }
 mark { background: none; }
 select { max-width: 100%; }
 /* The Grid
@@ -42,7 +42,7 @@ body a:hover { color: #000; text-decoration: none; }
 ================================================== */
 .clr:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden; }
 .clear { clear: both }
-img { height: auto; max-width: 100%; }
+img { /*height: auto; max-width: 100%;*/ }
 blockquote { font-size: 1.2em; line-height: 1.75em; margin-bottom: 30px; position: relative; color:  #787878; background: url("images/quote.png") left 4px no-repeat; padding-left: 60px; }
 blockquote.left { float: left; margin-left: 0; margin-right: 20px; text-align: right; width: 33%; }
 blockquote.right { float: right; margin-left: 20px; margin-right: 0; text-align: left; width: 33%; }
@@ -109,8 +109,10 @@ h5 { font-size: 12px }
 h6 { font-size: 10px }
 
 p { margin: 0 0 20px }
-h1 a, h2 a, h3 a, h4 a { color: #000; }
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover { color: #02aace; text-decoration: none; }
+h1 a, h3 a, h4 a { color: #000; }
+h2 a{color:#02aace;}
+h1 a:hover, h3 a:hover, h4 a:hover { color: #02aace; text-decoration: none; }
+h2 a:hover{color: #000; text-decoration: none;}
 em { font-style: italic }
 strong { font-weight: 600; color: #000; }
 small { font-size: 0.95em; }
@@ -195,8 +197,8 @@ html[xmlns] .slides {display: block;}
 .no-js .slides > li:first-child {display: block;}
 /* Homepage
 ================================================== */
-#featured-slider-wrap { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
-#featured-slider { position: relative; background: #222; min-height: 60px; }
+#featured-slider-wrap { /*margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee;*/ }
+#featured-slider { /*position: relative; background: #222; min-height: 60px;*/ }
 #featured-slider .featured-slider-slide { position: relative; }
 #featured-slider .featured-slider-caption { position: absolute; bottom: 0; left: 0; width: 100%; background: #000; background: rgba(0,0,0,0.8); color: #999; padding: 20px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 #featured-slider .featured-slider-caption-title { color: #fff; margin: 0 0 5px; font-weight: 400; }
@@ -237,8 +239,8 @@ h1.page-title {
 
 #content .node-teaser {
   margin-bottom: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #eee;
+  padding: 15px;
+  border: 1px solid #eee;
 }
 
 .node-teaser img {
@@ -572,11 +574,10 @@ ol.search-results { padding-left: 0; }
 }
 
 .links li a {
-  background-color: #E7E5E3;
-  color: #100100;
+  background-color: #02aace;
+  color: #FFFFFF;
   padding: 4px 5px;
   border-radius: 4px;
-  text-shadow: 1px 1px #fff;
   font-weight: normal;
 }
 
@@ -893,7 +894,10 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
 .views-field-title, .trending-title{
     font-size: 20px;
-    padding: 10px 0;
+    padding: 15px 0;
+}
+.trending-desc{
+    padding-right: 10px;
 }
 .views-row, .trending-item{
     border: 1px solid #eee;

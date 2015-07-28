@@ -1,0 +1,10 @@
+.trending-item{
+    width:100%;
+}
+.feed-content {
+    min-height: 150px;
+}
+.feed-image {
+    float: left;
+    width: 25%;
+}
