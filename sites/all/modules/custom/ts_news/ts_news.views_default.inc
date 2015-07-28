@@ -32,17 +32,26 @@ function ts_news_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: URL links */
+  $handler->display->display_options['fields']['field_url_link']['id'] = 'field_url_link';
+  $handler->display->display_options['fields']['field_url_link']['table'] = 'field_data_field_url_link';
+  $handler->display->display_options['fields']['field_url_link']['field'] = 'field_url_link';
+  $handler->display->display_options['fields']['field_url_link']['label'] = '';
+  $handler->display->display_options['fields']['field_url_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_url_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_url_link']['click_sort_column'] = 'url';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['path'] = '[title]';
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_url_link]';
   $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
