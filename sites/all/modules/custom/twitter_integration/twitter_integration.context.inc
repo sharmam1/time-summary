@@ -29,7 +29,30 @@ function twitter_integration_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'twitter_block-3' => array(
+          'module' => 'twitter_block',
+          'delta' => '3',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+        'twitter_block-1' => array(
+          'module' => 'twitter_block',
+          'delta' => '1',
+          'region' => 'sidebar_first',
+          'weight' => '-9',
+        ),
+        'twitter_block-2' => array(
+          'module' => 'twitter_block',
+          'delta' => '2',
+          'region' => 'sidebar_first',
+          'weight' => '-8',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables
