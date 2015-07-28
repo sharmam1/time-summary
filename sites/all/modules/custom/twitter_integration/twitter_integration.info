@@ -1,0 +1,9 @@
+name = Twitter Integration
+description = Twitter Integration
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = twitter_integration
+dependencies[] = block
+dependencies[] = twitter_block
+features[features_api][] = api:2
