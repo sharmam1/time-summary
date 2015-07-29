@@ -20,10 +20,10 @@ function ts_news_feeds_importer_default() {
     'fetcher' => array(
       'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
-        'auto_detect_feeds' => FALSE,
-        'use_pubsubhubbub' => FALSE,
+        'auto_detect_feeds' => 0,
+        'use_pubsubhubbub' => 1,
         'designated_hub' => 'http://fortune.com/feed/ ',
-        'request_timeout' => NULL,
+        'request_timeout' => '',
       ),
     ),
     'parser' => array(
@@ -73,10 +73,10 @@ function ts_news_feeds_importer_default() {
     'fetcher' => array(
       'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
-        'auto_detect_feeds' => FALSE,
-        'use_pubsubhubbub' => FALSE,
+        'auto_detect_feeds' => 0,
+        'use_pubsubhubbub' => 1,
         'designated_hub' => 'http://www.si.com/rss/si_topstories.rss',
-        'request_timeout' => NULL,
+        'request_timeout' => '',
       ),
     ),
     'parser' => array(
