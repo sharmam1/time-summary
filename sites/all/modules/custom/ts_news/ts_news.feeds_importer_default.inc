@@ -22,7 +22,7 @@ function ts_news_feeds_importer_default() {
       'config' => array(
         'auto_detect_feeds' => FALSE,
         'use_pubsubhubbub' => FALSE,
-        'designated_hub' => '',
+        'designated_hub' => 'http://fortune.com/feed/ ',
         'request_timeout' => NULL,
       ),
     ),
@@ -75,7 +75,7 @@ function ts_news_feeds_importer_default() {
       'config' => array(
         'auto_detect_feeds' => FALSE,
         'use_pubsubhubbub' => FALSE,
-        'designated_hub' => '',
+        'designated_hub' => 'http://www.si.com/rss/si_topstories.rss',
         'request_timeout' => NULL,
       ),
     ),
@@ -98,6 +98,11 @@ function ts_news_feeds_importer_default() {
           1 => array(
             'source' => 'description',
             'target' => 'body',
+            'unique' => FALSE,
+          ),
+          2 => array(
+            'source' => 'url',
+            'target' => 'field_url_links:url',
             'unique' => FALSE,
           ),
         ),
