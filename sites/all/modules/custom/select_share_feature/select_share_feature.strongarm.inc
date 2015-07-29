@@ -68,18 +68,14 @@ function select_share_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'share_selection_paths';
-  $strongarm->value = 'trending
-business
-sports-news
-top-stories
-world-news';
+  $strongarm->value = 'admin/*';
   $export['share_selection_paths'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'share_selection_paths_behavior';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['share_selection_paths_behavior'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -95,8 +91,8 @@ world-news';
   $strongarm->name = 'share_selection_show';
   $strongarm->value = array(
     'twitter' => 1,
-    'google_plus' => 0,
-    'linkedin' => 0,
+    'google_plus' => 1,
+    'linkedin' => 1,
   );
   $export['share_selection_show'] = $strongarm;
 
