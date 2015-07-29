@@ -1,0 +1,8 @@
+.feed-content {
+  min-height: 150px;
+  padding-left: 25%;
+}
+.feed-image {
+  width: 150px;
+  float: left;
+}

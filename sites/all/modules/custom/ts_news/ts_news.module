@@ -20,11 +20,17 @@ function trending_time_news () {
   $url = 'http://api.onebot.timeinc.com/feeds/timeinc/all.json';
   $request = drupal_http_request($url);
   $json_response = drupal_json_decode($request->data);
-  $output = '<div class="title">';
+  drupal_add_css(drupal_get_path('module', 'ts_news') . '/css/ts_news.css');
+  $output = '<div class="wrapper">';
+  $onebot_img = drupal_get_path('module', 'ts_news') . '/time_sample.png';
   foreach ($json_response['trending'] as $response) {
+    if ($response["image"]["thumbnail"]) {
+      $onebot_img = $response["image"]["thumbnail"];
+    }
     $output .= '<div class="trending-item" style="margin-bottom: 5%";>';
-    $output .= '<div class="trending-title">' . l($response['headline'],$response['url']) . '</div>';
-    $output .= '<div class="trending-desc">' . $response['excerpt'] . '</div></div>';
+    $output .= '<div class="feed-image"><img src=' . $onebot_img . ' height="150px" width="150px"></div>';
+    $output .= '<div class="feed-content"><div class="trending-title">' . l($response['headline'],$response['url']) . '</div>';
+    $output .= '<div class="trending-desc">' . $response['excerpt'] . '</div></div></div>';
   }
   $output .= '</div>';
   return $output;
