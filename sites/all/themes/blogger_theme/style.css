@@ -885,7 +885,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
 
 /*custom css added */
-.block{
+.region-sidebar-first .block-search,.region-sidebar-first .block-system,.region-sidebar-first .block-user{
     background: #eee;
     padding:10px;
     border : 2px solid #eee;
