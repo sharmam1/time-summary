@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Twitter Integration feature.
+ */
+
+include_once 'twitter_integration.features.inc';

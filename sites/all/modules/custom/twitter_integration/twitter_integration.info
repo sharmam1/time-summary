@@ -1,0 +1,14 @@
+name = Twitter Integration
+description = Twitter Integration
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = twitter_integration
+dependencies[] = block
+dependencies[] = context
+dependencies[] = features
+dependencies[] = twitter_block
+features[context][] = twitter
+features[ctools][] = context:context:3
+features[features_api][] = api:2
+features_exclude[dependencies][ts_news] = ts_news
