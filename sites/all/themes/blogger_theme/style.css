@@ -13,7 +13,7 @@ ol, ul { list-style: none }
 blockquote, q { quotes: none }
 :focus { outline: 0 }
 table { border-collapse: collapse; border-spacing: 0; }
-img { max-width: 100%; height: auto; }
+img {/* max-width: 100%; height: auto;*/ }
 mark { background: none; }
 select { max-width: 100%; }
 /* The Grid
@@ -42,7 +42,7 @@ body a:hover { color: #000; text-decoration: none; }
 ================================================== */
 .clr:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden; }
 .clear { clear: both }
-img { height: auto; max-width: 100%; }
+img { /*height: auto; max-width: 100%;*/ }
 blockquote { font-size: 1.2em; line-height: 1.75em; margin-bottom: 30px; position: relative; color:  #787878; background: url("images/quote.png") left 4px no-repeat; padding-left: 60px; }
 blockquote.left { float: left; margin-left: 0; margin-right: 20px; text-align: right; width: 33%; }
 blockquote.right { float: right; margin-left: 20px; margin-right: 0; text-align: left; width: 33%; }
