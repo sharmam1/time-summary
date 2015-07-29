@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Select Share feature feature.
+ */
+
+include_once 'select_share_feature.features.inc';
