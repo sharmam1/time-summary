@@ -1,0 +1,9 @@
+{
+  "business": "http://feeds2.feedburner.com/time/business",
+  "sports": "http://www.si.com/rss/si_topstories.rss",
+  "money": "http://time.com/business/feed/",
+  "entertainment": "http://www.ew.com/microsites/static/rss/podcasts/insideTV/index.xml",
+  "people":"http://feeds.people.com/people/headlines",
+  "health": "http://www.health.com/health/healthy-happy/feed",
+  "world": "http://feeds2.feedburner.com/time/world"
+}

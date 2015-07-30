@@ -1,0 +1,17 @@
+<ion-view title="Home">
+    <ion-content padding="true">
+<ion-header-bar class="bar-stable">
+                <h1 class="title">Sports</h1>
+            </ion-header-bar>
+  <ion-content ng-controller="FeedController" ng-init="init()">
+                <div class="card">
+                    <a ng-repeat="entry in entries" class="item item-text-wrap" ng-click="browse(entry.link)">
+                        <div class = "news-title">{{entry.title}}</div><br>
+                      <span ng-bind-html="entry.content"></span>
+</a>
+                </div>
+            </ion-content>
+
+
+    </ion-content>
+  </ion-view>

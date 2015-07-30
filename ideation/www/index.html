@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBdpUVrQgAOJ1tFtMy6nAgeaRE_dQ5se0o&sensor=true"></script>-->
+  </head>
+  <body ng-app="starter">
+  <ion-side-menus>
+    <ion-side-menu-content ng-controller="MainCtrl">
+      <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons">
+            <button class="button button-icon icon ion-navicon" ng-click = "toggleLeft()"></button>
+        </div>
+        <h1 class="title">Time-Summary</h1>
+      </ion-header-bar>
+      <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+      </ion-side-menu-content>
+
+
+    <ion-side-menu side="left">
+      <header class="bar bar-header bar-stable">
+        <h1 class="title">Select Category</h1>
+      </header>
+      <ion-content class="has-header main-page home-bg content-bg overlay-content">
+
+        <ion-list><ion-item class="item item-icon-left" href="#/login" menu-close>
+            <i class="icon ion-arrow-graph-up-right"></i>Top Trending
+          </ion-item></ion-list>
+        <ion-list><ion-item class="item item-icon-left" href="#/feeds/world" menu-close>
+            <i class="icon ion-ios-world"></i>World News
+          </ion-item></ion-list>
+        <ion-list>
+          <ion-item href="#/feeds/sports" class="item item-icon-left" menu-close ><i class="icon ion-ios-football"></i>
+            Sports News</ion-nav-view>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-item href="#/feeds/business" class="item item-icon-left" menu-close ><i class="icon ion-ios-pie"></i>
+            Business</ion-nav-view>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-item href="#/feeds/money" class="item item-icon-left" menu-close ><i class="icon ion-social-usd"></i>
+            Money</ion-nav-view>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-item href="#/feeds/entertainment" class="item item-icon-left" menu-close ><i class="icon ion-ios-camera"></i>
+            Entertainment</ion-nav-view>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-item href="#/feeds/people" class="item item-icon-left" menu-close ><i class="icon ion-android-contacts"></i>
+            People</ion-nav-view>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-item href="#/feeds/health" class="item item-icon-left" menu-close ><i class="icon ion-medkit"></i>
+            Health & Fitness</ion-nav-view>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-item href="#/clear" class="item item-icon-left" menu-close ><i class="icon ion-medkit"></i>
+            Clear Favorites</ion-nav-view>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+
+  </ion-side-menus>
+  <div class="bar bar-footer">
+    <div class="tabs tabs-icon-top">
+      <a class="tab-item" href="#/landing">
+        <i class="icon ion-home"></i>
+        Home
+      </a>
+      <a class="tab-item" href="#/favourites">
+        <i class="icon ion-star"></i>
+        Favorites
+      </a>
+      <a class="tab-item" href="#/about">
+        <i class="icon ion-ios-people"></i>
+        About
+      </a>
+    </div>
+  </div>
+  <script type="text/ng-template" id="home.html">
+    <ion-view title="Home">
+    <ion-content padding="true">
+    <h2>Home Page</h2>
+    <p>Heres the main route for the app.</p>
+    </ion-content>
+    </ion-view>
+  </script>
+
+  <script type="text/ng-template" id="help.html">
+    <ion-view title="Home">
+    <ion-content padding="true">
+    <h2>Using the app</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis architecto hic officia quasi excepturi sequi deleniti maiores consectetur veritatis sint?</p>
+    </ion-content>
+    </ion-view>
+  </script>
+</body>
+</html>
